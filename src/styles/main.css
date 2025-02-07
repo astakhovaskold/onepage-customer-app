@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-primary: 'SF Pro Text', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+
+    /* Primary */
+    --color-primary: #061178;
+
+    /* Secondary */
+    --color-secondary: #D9D9D9;
+
+    /* Text */
+    --color-white: #FFFFFF;
+    --color-white-650: rgba(255, 255, 255, 0.6);
+    --color-black: rgba(0, 0, 0, 0.88);
+    --color-gray: rgba(0, 0, 0, 0.25);
+
+    --color-blue: #02409D;
+    --color-light: #E6F4FF;
+
+    --color-processing: #1677FF;;
+    --color-warning: #FAAD14;
+    --color-success: #52C41A;
+    --color-error: #FF4D4F;
+    --color-closed: rgba(0, 0, 0, 0.25);
+
+    --color-menu-item-hover: #5A61A0;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-primary);
+        font-size: 16px;
+        background-color: var(--color-white) !important;
+        color: var(--color-primary) !important;
+    }
+
+    body[class^='no-scroll-'],
+    body[class*=' no-scroll-'] {
+        position: fixed;
+        inset: 0;
+        overflow: hidden;
+        touch-action: none;
+        overscroll-behavior: none;
+    }
+
+    /* @media screen(lg) {
+         main {
+             @apply pt-header;
+         }
+     }*/
+
+    ::selection {
+        background: currentColor !important;
+        color: currentColor !important;
+    }
+
+    u {
+        text-decoration: var(--color-primary) wavy underline;
+        text-underline-offset: 4px;
+    }
+}
+
+@layer utilities {
+    .text-fill-transparent {
+        -webkit-text-fill-color: transparent;
+    }
+
+    .backface-visibility-hidden {
+        backface-visibility: hidden;
+    }
+
+    .perspective-1000 {
+        perspective: 1000px;
+    }
+}
+
+@layer components {
+    /* heading */
+    .font-h1 {
+        @apply font-primary font-bold text-2xl md:text-5xl lg:text-8xl flex items-center gap-x-6 md:gap-x-8;
+    }
+
+    .font-h2 {
+        @apply font-primary font-bold text-3xl flex items-center gap-x-4;
+    }
+
+    .font-h3 {
+        @apply font-primary font-bold text-sm flex items-center gap-x-2;
+    }
+
+    .font-h4 {
+        @apply text-lg;
+    }
+
+    @media screen(md) {
+        .font-h1 {
+            @apply text-5xl gap-x-8;
+        }
+
+        .font-h2 {
+            @apply text-4xl gap-x-6;
+        }
+
+        .font-h3 {
+            @apply text-lg gap-x-4;
+        }
+
+        .font-h4 {
+            @apply text-lg;
+        }
+    }
+
+    @media screen(lg) {
+        .font-h1 {
+            @apply text-8xl;
+        }
+
+        .font-h2 {
+            @apply text-6xl gap-x-8;
+        }
+
+        .font-h4 {
+            @apply text-lg;
+        }
+    }
+}
+
+/* reCAPTCHA */
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+/*
+=== antd ===
+*/
