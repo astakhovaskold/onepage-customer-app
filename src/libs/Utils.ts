@@ -1,10 +1,52 @@
 import {RcFile} from 'antd/es/upload';
 
+import {AxiosError} from 'axios';
+
 import {ROLES, UserDTO} from '@/store/account/types';
+
+export interface ServerError {
+    message: string;
+    // errors: Record<string, string>;
+}
+
+type Exp = string | AxiosError<ServerError> | Error;
 
 export default class Utils {
     static hasAccess(user: UserDTO, roles: Array<ROLES> = []): boolean {
         return user && (roles.length === 0 || roles.some(role => role === user.role));
+    }
+
+    static textError(exp: Exp): string {
+        if (typeof exp === 'string') return exp;
+
+        if (exp instanceof Error && !(exp as AxiosError).isAxiosError) return exp.message;
+
+        const {status = null, data = null} = (exp as AxiosError<ServerError>).response ?? {};
+
+        let text = 'The request could not be processed or fulfilled';
+
+        if (status && [403, 404, 500].includes(status)) {
+            switch (status) {
+                case 403:
+                    return 'No access rights';
+                case 404:
+                    return 'Try fulfilling your request in a different way';
+                case 500:
+                    return 'The action cannot be performed at this time. Please try again later.';
+            }
+        } else if (data) {
+            // if ('errors' in data) {
+            //     text = Object.entries(data.errors)
+            //         .map(([key, value]) => `${key}: ${value}`)
+            //         .join('; ');
+            // }
+
+            if ('message' in data && data.message) {
+                text = data.message;
+            }
+        }
+
+        return text;
     }
 
     static getBase64 = <T = RcFile>(file: T, callback: (url: string) => void): void | boolean => {

@@ -1,5 +1,5 @@
 import {Spin} from 'antd';
-import {lazy, memo, Suspense} from 'react';
+import {memo, Suspense} from 'react';
 import {createRoutesFromElements, Route, RouterProvider} from 'react-router';
 
 import {createBrowserRouter} from 'react-router-dom';
@@ -8,9 +8,8 @@ import App from '../App';
 
 import {RouteGuard} from './RouteGuard';
 
+import ErrorBoundary from '@/app/components/Utils/ErrorBoundary';
 import {routes} from '@/router/routes';
-
-const UnknownError = lazy(() => import('@/app/pages/error/UnknownError'));
 
 const Navigation = memo(() => {
     return (
@@ -22,11 +21,8 @@ const Navigation = memo(() => {
                             key="parent"
                             path="/"
                             element={<App />}
-                            errorElement={
-                                <Suspense fallback={<Spin spinning />}>
-                                    <UnknownError />
-                                </Suspense>
-                            }
+                            errorElement={<ErrorBoundary />}
+                            hasErrorBoundary
                         >
                             {routes.map(({path, title, component: Component, ...guardProps}) => {
                                 const {restrictedWithAuth, isPublic, roles} = guardProps;
