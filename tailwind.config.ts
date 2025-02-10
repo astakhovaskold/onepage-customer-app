@@ -5,6 +5,7 @@ import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
     content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+    darkMode: 'selector',
     theme: {
         container: {
             padding: '1rem 1.5rem 0',

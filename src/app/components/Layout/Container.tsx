@@ -2,7 +2,7 @@ import {Layout} from 'antd';
 import clsx from 'clsx';
 import {memo, PropsWithChildren} from 'react';
 
-import Header from '@/app/components/Layout/Header/Header';
+import Header from '@/app/components/Layout/Header';
 
 import {useAuth} from '@/hooks/useAuth';
 

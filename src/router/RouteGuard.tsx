@@ -17,7 +17,7 @@ export interface RouteGuardProps {
 }
 
 export const RouteGuard = memo<RouteGuardProps>(
-    ({restrictedWithAuth = false, isPublic = config.isPublic, title, roles}): JSX.Element | null => {
+    ({restrictedWithAuth = false, isPublic = config.settings.isPublic, title, roles}): JSX.Element | null => {
         const isAuth = useAuth();
         const loggedOut = useAccount(state => state.loggedOut);
 

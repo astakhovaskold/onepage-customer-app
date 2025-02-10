@@ -19,7 +19,7 @@ export const routes: Array<RouteItem> = [
     {
         path: '/',
         component: Home,
-        isPublic: config.isPublic,
+        isPublic: config.settings.isPublic,
     },
     {
         path: 'unauthorized',
