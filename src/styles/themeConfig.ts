@@ -8,7 +8,7 @@ const themeConfig: ThemeConfig = {
     token: {
         fontSize: 14,
         fontFamily: 'SF Pro Text, sans-serif',
-        colorPrimary: '#061178',
+        colorPrimary: '#000000',
         colorTextSecondary: 'rgba(0, 0, 0, 0.25)',
     },
     components: {

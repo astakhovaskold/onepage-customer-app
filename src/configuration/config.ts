@@ -12,6 +12,21 @@ const config = {
                 image: '/images/logo.svg',
             },
         },
+        carousel: {
+            items: [
+                {
+                    title: 'Булки',
+                    alt: '',
+                    image: '/images/carousel/c-1.png',
+                    href: 'https://white-group.ru',
+                },
+                {
+                    title: 'Мясо',
+                    alt: '',
+                    image: '/images/carousel/c-2.png',
+                },
+            ],
+        },
     },
 };
 
