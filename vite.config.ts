@@ -37,10 +37,12 @@ export default ({mode}: ConfigEnv) => {
                 '@': path.resolve(__dirname, 'src'),
             },
         },
+        base: '',
         build: {
             outDir: './build',
             minify: true,
             reportCompressedSize: true,
+            copyPublicDir: true,
         },
     });
 };

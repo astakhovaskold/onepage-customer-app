@@ -46,7 +46,7 @@ const appConfig: Configuration = {
             title: i18n.t('header.title'),
             logo: {
                 title: APP_NAME,
-                image: '/images/logo.svg',
+                image: 'images/logo.svg',
             },
         },
         carousel: {
