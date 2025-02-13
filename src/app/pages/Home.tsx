@@ -1,9 +1,12 @@
 import {memo} from 'react';
 
 import MobileContainer from '@/app/components/Layout/MobileContainer';
-import QuickMenu from '@/app/components/QuickMenu';
 import Title from '@/app/components/Utils/Title';
+import ContactUs from '@/app/modules/home/ContactUs';
 import HomeCarousel from '@/app/modules/home/HomeCarousel';
+import HomeMenu from '@/app/modules/home/HomeMenu';
+import RateUs from '@/app/modules/home/RateUs';
+import Tips from '@/app/modules/home/Tips';
 
 const Home = memo((): JSX.Element | null => {
     return (
@@ -11,23 +14,16 @@ const Home = memo((): JSX.Element | null => {
             <Title value="Welcome" />
 
             <MobileContainer>
-                <div className="flex flex-col gap-y-4 text-black font-semibold">
+                <div className="flex flex-col gap-y-3 text-black font-semibold">
                     <HomeCarousel />
 
-                    <QuickMenu
-                        items={[
-                            {
-                                title: 'Напитки',
-                            },
-                            {
-                                title: 'Меню',
-                                featured: true,
-                            },
-                            {
-                                title: 'Алкоголь',
-                            },
-                        ]}
-                    />
+                    <HomeMenu />
+
+                    <RateUs />
+
+                    <Tips />
+
+                    <ContactUs />
                 </div>
             </MobileContainer>
         </>

@@ -109,6 +109,18 @@ export default class Utils {
 
     static isNavigator = typeof navigator !== 'undefined';
 
+    static detectMobile(userAgent?: string): boolean {
+        if (typeof userAgent !== 'string') return false;
+
+        return new RegExp('(iPhone|iPad|Android|Mobile)', 'gi').test(userAgent);
+    }
+
+    static detectIos(userAgent?: string): boolean {
+        if (typeof userAgent !== 'string') return false;
+
+        return new RegExp('(iPad|iPhone|iPod)', 'gi').test(userAgent);
+    }
+
     static getFileExtension(filename: string) {
         const parts = filename.split('.');
         if (parts.length > 1) {

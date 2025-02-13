@@ -6,7 +6,7 @@ interface QuickMenuItem {
     title: string;
     href?: string;
     onClick?: () => void;
-    featured?: boolean;
+    large?: boolean;
 }
 
 interface QuickMenuProps {
@@ -16,15 +16,16 @@ interface QuickMenuProps {
 const QuickMenu = memo<QuickMenuProps>(({items}): JSX.Element | null => {
     return (
         <ul className="flex items-center gap-x-2">
-            {items.map(({title, href, onClick, featured = false}) => (
+            {items.map(({title, href, onClick, large = false}) => (
                 <li key={title} className="flex-auto">
                     <Button
                         className={clsx(
                             'border-none bg-primary hover:!bg-secondary rounded-lg',
-                            featured ? 'h-16 min-w-28' : 'h-12',
+                            large ? 'h-16 min-w-28' : 'h-12',
                         )}
                         onClick={onClick}
                         href={href}
+                        target="_blank"
                         block
                     >
                         {title}
