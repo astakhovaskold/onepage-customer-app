@@ -14,7 +14,7 @@ const Home = memo((): JSX.Element | null => {
             <Title value="Welcome" />
 
             <MobileContainer>
-                <div className="flex flex-col gap-y-3 text-black font-semibold">
+                <div className="flex flex-col gap-layout text-black font-semibold">
                     <HomeCarousel />
 
                     <HomeMenu />

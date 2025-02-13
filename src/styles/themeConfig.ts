@@ -1,33 +1,28 @@
-/**
- * Created by ASTAKHOV A.A. on 25.08.2023
- */
-
 import {ThemeConfig} from 'antd';
+
+import appTheme from '@/configuration/appTheme';
 
 const themeConfig: ThemeConfig = {
     token: {
-        fontSize: 14,
-        fontFamily: 'SF Pro Text, sans-serif',
-        colorPrimary: '#000000',
-        colorTextSecondary: 'rgba(0, 0, 0, 0.25)',
+        fontSize: appTheme.fontSize.common,
+        fontFamily: appTheme.fontFamily.primary,
+        colorPrimary: appTheme.color.text,
     },
     components: {
         Table: {
             cellPaddingBlock: 20,
             cellPaddingInline: 16,
-            rowSelectedBg: '#FFFFFF',
-            rowSelectedHoverBg: '#FAFAFA',
+            rowSelectedBg: appTheme.color.background,
+            rowSelectedHoverBg: appTheme.color['background-hover'],
         },
         Layout: {
-            bodyBg: '#FFFFFF',
+            bodyBg: appTheme.color.background,
         },
         Button: {
             primaryShadow: 'none',
         },
         Dropdown: {
-            colorInfoTextActive: '#000000',
-            controlItemBgActive: '#E6F4FF',
-            controlItemBgActiveHover: '#E6F4FF',
+            colorInfoTextActive: appTheme.color.text,
         },
     },
 };

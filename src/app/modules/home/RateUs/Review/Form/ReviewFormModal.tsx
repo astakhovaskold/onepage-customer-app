@@ -1,37 +1,48 @@
 import {Button, Modal, ModalProps} from 'antd';
+import clsx from 'clsx';
 import {memo} from 'react';
 
 import ReviewForm from '@/app/modules/home/RateUs/Review/Form/ReviewForm';
 import {FORM_ID} from '@/app/modules/home/RateUs/Review/Form/settings';
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
+import appTheme from '@/configuration/appTheme';
 
 interface Props {
     open: boolean;
     onCancel?: () => void;
 }
 
-const classNames: ModalProps['classNames'] = {content: '!bg-[#f6f6f6] !rounded-xl', footer: 'flex justify-start'};
+const classNames: ModalProps['classNames'] = {
+    content: '!bg-form-background !rounded-common',
+    header: '!bg-form-background text-xl text-black font-bold mb-6',
+    footer: clsx('flex', {
+        'justify-start': appTheme.token.components.modal.form.button.placement === 'start',
+        'justify-end': appTheme.token.components.modal.form.button.placement === 'end',
+    }),
+};
 
 const ReviewFormModal = memo<Props>(({open, onCancel}): JSX.Element | null => {
-    const {title, submit} = config.modal.form;
+    const {token} = appTheme;
+
+    const {title, submit} = appConfig.modal.form;
 
     return (
         <Modal
             open={open}
             onCancel={onCancel}
             classNames={classNames}
+            title={title}
             footer={
                 <Button
                     form={FORM_ID}
-                    className="!bg-[#196dff] text-sm !text-white font-medium !border-none rounded-lg hover:opacity-80"
+                    size={token.components.modal.form.button.size || 'small'}
+                    className="px-3 py-2 !bg-form-button-background text-sm !text-white font-medium !border-none rounded-form-button hover:opacity-80"
                     htmlType="submit"
                 >
                     {submit}
                 </Button>
             }
         >
-            <h2 className="text-xl text-black font-bold mb-6">{title}</h2>
-
             <ReviewForm />
         </Modal>
     );

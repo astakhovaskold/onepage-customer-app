@@ -14,7 +14,7 @@ interface Configuration {
             title: string;
             items: Array<{href: string; type: string}>;
         };
-        header: {logo: {image: string; title: string}};
+        header: {title?: ReactNode; logo: {image: string; title: string}};
         carousel: {items: Array<{children: ReactNode; href: string; title: string}>};
         menu: {items: Array<{href: string; title: string}>};
         tips: {button: string; subtitle: string; href: string; title: string};
@@ -29,18 +29,19 @@ interface Configuration {
         rate: {
             submit: string;
             title: string;
-            items: Array<{name: string; href: string} & ({icon: SocialMediaType} | {image: string})>;
+            items: Array<{icon: SocialMediaType; image?: string; name: string; href: string}>;
         };
     };
 }
 
-const config: Configuration = {
+const appConfig: Configuration = {
     settings: {
         isDark: false,
         isPublic: true,
     },
     components: {
         header: {
+            title: 'Ресторан ДеДа Хинкали на Караванной',
             logo: {
                 title: APP_NAME,
                 image: '/images/logo.svg',
@@ -135,4 +136,4 @@ const config: Configuration = {
     },
 };
 
-export default config;
+export default appConfig;

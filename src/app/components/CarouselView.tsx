@@ -24,7 +24,7 @@ const CarouselView = memo<Props>(({items, autoplay = true, autoplaySpeed = 3000}
                         key={title}
                         href={href ?? undefined}
                         target={href ? '_blank' : undefined}
-                        className="relative shadow-black rounded-lg overflow-hidden"
+                        className="relative shadow-black rounded-common overflow-hidden"
                     >
                         {typeof children === 'undefined' ? (
                             <>{image ? <img src={image} title={title} alt={alt || title} /> : <span>{title}</span>}</>

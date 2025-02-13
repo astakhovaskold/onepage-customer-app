@@ -1,10 +1,10 @@
 import {memo} from 'react';
 
 import ContactButton from '@/app/components/ContactButton';
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
 
 const ReviewVendor = memo((): JSX.Element | null => {
-    const {items} = config.modal.rate;
+    const {items} = appConfig.modal.rate;
 
     return (
         <ul className="grid grid-cols-12">
@@ -21,6 +21,8 @@ const ReviewVendor = memo((): JSX.Element | null => {
                         ) : (
                             <a href={href} target="_blank" rel="noreferrer nofollow">
                                 <img
+                                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                                    // @ts-ignore
                                     src={rest.image}
                                     alt=""
                                     className="object-cover w-10 aspect-square rounded-full overflow-hidden"

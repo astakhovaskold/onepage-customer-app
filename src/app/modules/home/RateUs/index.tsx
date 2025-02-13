@@ -5,10 +5,10 @@ import MiniWidget from '@/app/components/MiniWidget';
 import Context from '@/app/modules/home/RateUs/Review/Context';
 import ReviewFormModal from '@/app/modules/home/RateUs/Review/Form/ReviewFormModal';
 import ReviewVendorModal from '@/app/modules/home/RateUs/Review/Vendor/ReviewVendorModal';
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
 
 const RateUs = memo((): JSX.Element | null => {
-    const {title, subtitle, wantedRate} = config.components.rate;
+    const {title, subtitle, wantedRate} = appConfig.components.rate;
 
     const [rate, setRate] = useState(0);
     const [open, setOpen] = useState(false);

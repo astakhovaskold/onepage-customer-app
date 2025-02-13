@@ -1,12 +1,10 @@
 import {memo} from 'react';
 
 import QuickMenu from '@/app/components/QuickMenu';
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
 
-interface MenuProps {}
-
-const HomeMenu = memo<MenuProps>((): JSX.Element | null => {
-    const {items} = config.components.menu;
+const HomeMenu = memo((): JSX.Element | null => {
+    const {items} = appConfig.components.menu;
 
     return <QuickMenu items={items} />;
 });

@@ -2,7 +2,7 @@ import {lazy} from 'react';
 
 import Auth from '@/app/pages/Auth';
 import Home from '@/app/pages/Home';
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
 import {RouteItem} from '@/router/types';
 
 const Unauthorized = lazy(() => import('@/app/pages/error/Unauthorized'));
@@ -19,7 +19,7 @@ export const routes: Array<RouteItem> = [
     {
         path: '/',
         component: Home,
-        isPublic: config.settings.isPublic,
+        isPublic: appConfig.settings.isPublic,
     },
     {
         path: 'unauthorized',

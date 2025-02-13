@@ -8,20 +8,28 @@ import AxiosInterceptorMessage from '@/app/components/Presentation/AxiosIntercep
 import SuspenseLoader from '@/app/components/Presentation/SuspenseLoader';
 import AxiosInterceptorAccess from '@/app/components/Utils/AxiosInterceptorAccess';
 
-import config from '@/configuration/config';
+import GoogleFontLoader from '@/app/components/Utils/GoogleFontsLoader';
+import appConfig from '@/configuration/appConfig';
+import appTheme from '@/configuration/appTheme';
 import bootstrap from '@/libs/mockApi';
 
 const App = memo((): JSX.Element | null => {
     useEffect(() => {
         bootstrap();
 
-        if (config.settings.isDark) {
+        if (appConfig.settings.isDark) {
             document.getElementsByTagName('HTML')[0].classList.add('dark');
         }
     }, []);
 
     return (
-        <div className="bg-white dark:invert">
+        <div className="bg-background font-text ">
+            {Array.from(new Set(Object.values(appTheme.fontFamily))).map(font => {
+                if (!font) return null;
+
+                return <GoogleFontLoader key={font} fontFamily={font} display="swap" />;
+            })}
+
             <AxiosInterceptorAccess />
 
             <Suspense fallback={<SuspenseLoader />}>

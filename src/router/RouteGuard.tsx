@@ -3,7 +3,7 @@ import {Outlet, useLocation, useNavigate, useSearchParams} from 'react-router-do
 
 // import useHasAccess from '@/hooks/useHasAccess';
 import Title from '@/app/components/Utils/Title';
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
 import {useAuth} from '@/hooks/useAuth';
 import useHasAccess from '@/hooks/useHasAccess';
 import useAccount from '@/store/account/account';
@@ -17,7 +17,7 @@ export interface RouteGuardProps {
 }
 
 export const RouteGuard = memo<RouteGuardProps>(
-    ({restrictedWithAuth = false, isPublic = config.settings.isPublic, title, roles}): JSX.Element | null => {
+    ({restrictedWithAuth = false, isPublic = appConfig.settings.isPublic, title, roles}): JSX.Element | null => {
         const isAuth = useAuth();
         const loggedOut = useAccount(state => state.loggedOut);
 

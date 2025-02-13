@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import {memo} from 'react';
 import {Link} from 'react-router-dom';
 
-import config from '@/configuration/config';
+import appConfig from '@/configuration/appConfig';
 import {APP_NAME} from '@/libs/text';
 
 interface LogoProps {
@@ -11,7 +11,7 @@ interface LogoProps {
 }
 
 const Logo = memo<LogoProps>(({collapsed = false, className}): JSX.Element | null => {
-    const {title, image} = config.components.header.logo;
+    const {title, image} = appConfig.components.header.logo;
 
     return (
         <Link

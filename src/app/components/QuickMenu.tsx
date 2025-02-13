@@ -20,7 +20,7 @@ const QuickMenu = memo<QuickMenuProps>(({items}): JSX.Element | null => {
                 <li key={title} className="flex-auto">
                     <Button
                         className={clsx(
-                            'border-none bg-primary hover:!bg-secondary rounded-lg',
+                            'border-none bg-primary hover:!bg-background-hover rounded-common',
                             large ? 'h-16 min-w-28' : 'h-12',
                         )}
                         onClick={onClick}
