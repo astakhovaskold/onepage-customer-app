@@ -16,7 +16,7 @@ interface Theme {
     };
     shape: {rounded: string; bordered: string; boxShadow: string};
     fontFamily: {secondary: string; text: string; primary: string};
-    fontSize: {common: string};
+    fontSize: {common: number};
     token: {
         base: {
             banner: {fontFamily: string; fontSize: string; fontWeight: string; color: string};
