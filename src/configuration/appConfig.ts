@@ -3,6 +3,7 @@ import {ReactNode} from 'react';
 import {SocialMediaType} from '@/app/components/SocialMediaIcon/types';
 import {getMobileAppLink} from '@/app/modules/home/utils';
 import {SLIDE_1} from '@/configuration/slides';
+import i18n from '@/libs/i18n';
 import {APP_NAME} from '@/libs/text';
 
 interface Configuration {
@@ -21,10 +22,11 @@ interface Configuration {
     };
     modal: {
         form: {
-            submit: string;
-            aspects: Array<string>;
-            place: {image: string; address: string; name: string};
             title: string;
+            place: {image: string; address: string; name: string};
+            textarea: string;
+            aspects: Array<string>;
+            submit: string;
         };
         rate: {
             submit: string;
@@ -41,7 +43,7 @@ const appConfig: Configuration = {
     },
     components: {
         header: {
-            title: 'Ресторан ДеДа Хинкали на Караванной',
+            title: i18n.t('header.title'),
             logo: {
                 title: APP_NAME,
                 image: '/images/logo.svg',
@@ -50,7 +52,7 @@ const appConfig: Configuration = {
         carousel: {
             items: [
                 {
-                    title: 'Система лояльности',
+                    title: i18n.t('banner.0.title'),
                     href: getMobileAppLink(),
                     children: SLIDE_1,
                 },
@@ -59,56 +61,57 @@ const appConfig: Configuration = {
         menu: {
             items: [
                 {
-                    title: 'Барное меню',
-                    href: 'https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf',
+                    title: i18n.t('menu.items.0.title'),
+                    href: i18n.t('menu.items.0.href'),
                     // large: false
                 },
                 {
-                    title: 'Основное меню',
-                    href: 'https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf',
+                    title: i18n.t('menu.items.1.title'),
+                    href: i18n.t('menu.items.1.href'),
                     // large: false
                 },
             ],
         },
         rate: {
-            title: 'Оставить отзыв',
-            subtitle: 'Оцените заведение, пожалуйста',
+            title: i18n.t('rate.title'),
+            subtitle: i18n.t('rate.subtitle'),
             wantedRate: 4, // min rate
         },
         tips: {
-            title: 'Оставить чаевые',
-            subtitle: 'Вам понравилось обслуживание?',
+            title: i18n.t('tips.title'),
+            subtitle: i18n.t('tips.subtitle'),
             href: 'https://netmonet.co/tip/group/525781/users/1?o=0',
-            button: 'Оставить чаевые',
+            button: i18n.t('tips.button'),
         },
         contact: {
-            title: 'Написать руководителю',
-            subtitle: 'Столкнулись с неприятной ситуацией?',
+            title: i18n.t('contact.title'),
+            subtitle: i18n.t('contact.subtitle'),
             items: [
                 {
                     type: 'telegram',
-                    href: '',
+                    href: 'https://t.me',
                 },
                 {
                     type: 'whatsapp',
-                    href: '',
+                    href: 'https://wa.me',
                 },
             ],
         },
     },
     modal: {
         form: {
-            title: 'Как вам это место?',
+            title: i18n.t('modal.form.title'),
             place: {
-                name: 'Деда Хинкали',
-                address: 'ул. Караванная 2',
+                name: i18n.t('modal.form.place.name'),
+                address: i18n.t('modal.form.place.address'),
                 image: 'https://avatars.mds.yandex.net/get-altay/9114271/2a000001901245bbeac2ac49c5635c100a83/L',
             },
-            aspects: ['Еда', 'Кухня', 'Обслуживание', 'Персонал', 'Атмосфера', 'Официанты'],
-            submit: 'Сохранить',
+            textarea: i18n.t('modal.form.textarea'),
+            aspects: i18n.t('modal.form.aspects').split(';'),
+            submit: i18n.t('modal.form.submit'),
         },
         rate: {
-            title: 'Выберите площадку',
+            title: i18n.t('modal.rate.title'),
             items: [
                 {
                     icon: 'telegram',
@@ -131,7 +134,7 @@ const appConfig: Configuration = {
                     href: 'https://maps.google.com',
                 },
             ],
-            submit: 'Готово',
+            submit: i18n.t('modal.rate.submit'),
         },
     },
 };

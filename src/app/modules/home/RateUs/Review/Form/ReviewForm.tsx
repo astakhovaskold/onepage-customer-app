@@ -14,7 +14,7 @@ const {Item} = Form;
 const {TextArea} = Input;
 
 const ReviewForm = memo((): JSX.Element | null => {
-    const {aspects, place} = appConfig.modal.form;
+    const {aspects, place, textarea} = appConfig.modal.form;
     const {name, address, image} = place;
 
     const {rate} = useContext(Context);
@@ -55,7 +55,7 @@ const ReviewForm = memo((): JSX.Element | null => {
             <Item name="message" noStyle>
                 <TextArea
                     className="p-4 border-none rounded-common text-base !resize-none"
-                    placeholder="Опишите плюсы и минусы"
+                    placeholder={textarea}
                     rows={3}
                 />
             </Item>
