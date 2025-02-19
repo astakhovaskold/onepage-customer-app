@@ -1,82 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
-interface Theme {
-    layout: {spacing: string; gap: string};
-    extend: Record<string, unknown>;
-    color: {
-        secondary: string;
-        border: string;
-        background: string;
-        'background-hover': string;
-        accent: string;
-        primary: string;
-        text: string;
-        rate: string;
-    };
-    shape: {rounded: string; bordered: string; boxShadow: string};
-    fontFamily: {secondary: string; text: string; primary: string};
-    fontSize: {common: number};
-    token: {
-        base: {
-            banner: {fontFamily: string; fontSize: string; fontWeight: string; color: string};
-        };
-        components: {
-            common: {
-                spacing: string;
-                background: string;
-                'background-hover': string;
-                gap: string;
-                rounded: string;
-                bordered: string;
-                boxShadow: string;
-            };
-            header: {
-                subtitle: {fontFamily: string; fontSize: string; fontWeight: string; color: string};
-                title: {fontFamily: string; fontSize: string; fontWeight: string; color: string};
-            };
-            modal: {
-                form: {
-                    background: string;
-                    layout: {spacing: string; gap: string};
-                    button: {
-                        size: 'small' | 'middle' | 'large';
-                        background: string;
-                        placement: 'start' | 'end';
-                        color: string;
-                        rounded: string;
-                    };
-                    block: {background: string};
-                };
-                rate: {
-                    button: {
-                        size: 'small' | 'middle' | 'large';
-                        background: string;
-                        placement: 'start' | 'end';
-                        rounded: string;
-                        color: string;
-                    };
-                };
-            };
-            tips: {
-                button: {
-                    background: string;
-                    size: 'small' | 'middle' | 'large';
-                    color: string;
-                };
-            };
-        };
-    };
-}
+import {Theme} from '@/configuration/types';
 
 const appThemeBase: Omit<Theme, 'token' | 'extend'> = {
     color: {
         primary: '#d8c2a4',
-        secondary: '#FAFAFA',
+        secondary: '#f9f6f0',
         accent: '#60fb07',
         text: '#000000',
 
-        background: '#FFFFFF',
+        background: '#FAFAFA',
         'background-hover': '#DADADA',
 
         border: 'none',

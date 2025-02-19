@@ -11,7 +11,7 @@ const Tips = memo((): JSX.Element | null => {
     return (
         <MiniWidget title={title} subtitle={subtitle}>
             <Button
-                className="h-10 !bg-tips-button-background !text-tips-button-color !rounded-common !text-sm"
+                className="h-10 !bg-tips-button-background-gradient !text-tips-button-color !rounded-common !text-sm"
                 href={href}
                 size={appTheme.token.components.tips.button.size || 'middle'}
                 target="_blank"

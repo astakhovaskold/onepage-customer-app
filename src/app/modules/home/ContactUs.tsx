@@ -10,8 +10,8 @@ const ContactUs = memo((): JSX.Element | null => {
 
     return (
         <MiniWidget title={title} subtitle={subtitle} className="gap-x-6">
-            {items.map(({type, href}) => (
-                <ContactButton key={href} href={href} type={type as SocialMediaType} />
+            {items.map(({icon, href}) => (
+                <ContactButton key={href} href={href} type={icon as SocialMediaType} />
             ))}
         </MiniWidget>
     );

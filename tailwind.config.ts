@@ -77,8 +77,11 @@ const config: Config = {
                 error: 'var(--color-error)',
                 closed: 'var(--color-closed)',
             },
+            backgroundImage: {
+                'tips-button-background-gradient': token.components.tips.button.background,
+            },
             fontSize: {
-                common: fontSize.common,
+                common: fontSize.common as unknown as string,
 
                 'banner-title': token.base.banner.fontSize,
 

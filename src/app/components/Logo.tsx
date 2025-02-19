@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import {memo} from 'react';
-import {Link} from 'react-router-dom';
 
 import appConfig from '@/configuration/appConfig';
 import {APP_NAME} from '@/libs/text';
@@ -14,8 +13,8 @@ const Logo = memo<LogoProps>(({collapsed = false, className}): JSX.Element | nul
     const {title, image} = appConfig.components.header.logo;
 
     return (
-        <Link
-            to="/"
+        <a
+            href={appConfig.settings.baseURL}
             className={clsx(
                 'text-2xl text-black hover:text-black hover:opacity-80 font-bold',
                 {
@@ -25,7 +24,7 @@ const Logo = memo<LogoProps>(({collapsed = false, className}): JSX.Element | nul
             )}
         >
             {image ? <img src={image} alt={title} title={title} width="48" height="48" /> : APP_NAME}
-        </Link>
+        </a>
     );
 });
 

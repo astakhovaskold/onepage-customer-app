@@ -1,0 +1,72 @@
+{
+  "header": {
+    "title": "Ресторан ДеДа Хинкали на Литейном"
+  },
+  "carousel": {
+    "items": [
+      {
+        "title": "Система лояльности",
+        "children": [
+          {
+            "title": "Регистрируйтесь в нашей системе лояльности",
+            "subtitle": "Нажмите, чтобы скачать приложение"
+          }
+        ]
+      }
+    ]
+  },
+  "place": {
+    "name": "Деда Хинкали",
+    "address": "Литейный пр. 64"
+  },
+  "menu": {
+    "items": [
+      {
+        "title": "Барное меню",
+        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
+      },
+      {
+        "title": "Основное меню",
+        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
+      }
+    ]
+  },
+  "social_contact": {
+    "items": [
+      {
+        "icon": "telegram",
+        "name": "Telegram",
+        "href": "https://t.me"
+      },
+      {
+        "icon": "whatsapp",
+        "name": "WhatsApp",
+        "href": "https://wa.me"
+      }
+    ]
+  },
+  "social_extended": {
+    "items": [
+      {
+        "icon": "telegram",
+        "name": "Telegram",
+        "href": "https://t.me"
+      },
+      {
+        "icon": "whatsapp",
+        "name": "WhatsApp",
+        "href": "https://wa.me"
+      },
+      {
+        "icon": "yandex",
+        "name": "Yandex",
+        "href": "https://maps.yandex.ru"
+      },
+      {
+        "icon": "google-maps",
+        "name": "Google Maps",
+        "href": "https://maps.google.com"
+      }
+    ]
+  }
+}

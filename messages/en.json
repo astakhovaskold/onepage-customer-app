@@ -1,30 +1,4 @@
 {
-  "header": {
-    "title": "DeDa Khinkali Restaurant on Karavannaya"
-  },
-  "banner": [
-    {
-      "title": "Loyalty program",
-      "children": [
-        {
-          "title": "Register for our loyalty system",
-          "subtitle": "Click to download the app"
-        }
-      ]
-    }
-  ],
-  "menu": {
-    "items": [
-      {
-        "title": "Bar menu",
-        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
-      },
-      {
-        "title": "Main menu",
-        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
-      }
-    ]
-  },
   "rate": {
     "title": "Leave a review",
     "subtitle": "Please rate the establishment"
@@ -41,38 +15,12 @@
   "modal": {
     "form": {
       "title": "How do you like this place?",
-      "place": {
-        "name": "Deda Khinkali",
-        "address": "2 Karavannaya str."
-      },
       "textarea": "Describe the pros and cons",
       "aspects": "Food;Cuisine;Service;Staff;Atmosphere;Waiters",
       "submit": "Save"
     },
     "rate": {
       "title": "Choose a platform",
-      "items": [
-        {
-          "icon": "telegram",
-          "name": "Telegram",
-          "href": "https://t.me"
-        },
-        {
-          "icon": "whatsapp",
-          "name": "WhatsApp",
-          "href": "https://wa.me"
-        },
-        {
-          "icon": "yandex",
-          "name": "Yandex",
-          "href": "https://maps.yandex.ru"
-        },
-        {
-          "icon": "google-maps",
-          "name": "Google Maps",
-          "href": "https://maps.google.com"
-        }
-      ],
       "submit": "Done"
     }
   }

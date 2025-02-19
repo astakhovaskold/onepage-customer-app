@@ -8,10 +8,14 @@ import HomeMenu from '@/app/modules/home/HomeMenu';
 import RateUs from '@/app/modules/home/RateUs';
 import Tips from '@/app/modules/home/Tips';
 
+import appConfig from '@/configuration/appConfig';
+
+const {header, rate, tips, contact} = appConfig.components;
+
 const Home = memo((): JSX.Element | null => {
     return (
         <>
-            <Title value="Welcome" />
+            <Title value={header.title as string} />
 
             <MobileContainer>
                 <div className="flex flex-col gap-layout text-black font-semibold">
@@ -19,11 +23,11 @@ const Home = memo((): JSX.Element | null => {
 
                     <HomeMenu />
 
-                    <RateUs />
+                    {rate && <RateUs />}
 
-                    <Tips />
+                    {tips && <Tips />}
 
-                    <ContactUs />
+                    {contact && <ContactUs />}
                 </div>
             </MobileContainer>
         </>

@@ -2,32 +2,49 @@ import i18n from 'i18next';
 import detector from 'i18next-browser-languagedetector';
 import {initReactI18next} from 'react-i18next';
 
+import deda_f_en from '@/../messages/deda_f/en.json';
+import deda_f_ru from '@/../messages/deda_f/ru.json';
+
+import development_en from '@/../messages/development/en.json';
+import development_ru from '@/../messages/development/ru.json';
+
 import en from '@/../messages/en.json';
 import ru from '@/../messages/ru.json';
 
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
+const placeRU = new Map(
+    Object.entries({
+        deda_f: deda_f_ru,
+        development: development_ru,
+    }),
+);
+
+const placeEN = new Map(
+    Object.entries({
+        deda_f: deda_f_en,
+        development: development_en,
+    }),
+);
+
 const resources = {
     ru: {
-        translation: ru,
+        common: ru,
+        place: (placeRU.has(import.meta.env.MODE) ? placeRU.get(import.meta.env.MODE) : development_ru)!,
     },
     en: {
-        translation: en,
+        common: en,
+        place: (placeEN.has(import.meta.env.MODE) ? placeEN.get(import.meta.env.MODE) : development_en)!,
     },
 };
 
 i18n.use(detector)
-    .use(initReactI18next) // passes i18n down to react-i18next
+    .use(initReactI18next)
     .init({
         resources,
-        lng: 'ru', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-        // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
-        // if you're using a language detector, do not define the lng option
-
+        lng: 'ru',
         interpolation: {
-            escapeValue: false, // react already safes from xss
+            escapeValue: false,
         },
+        returnObjects: true,
     });
 
 export default i18n;

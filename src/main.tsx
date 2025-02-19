@@ -10,19 +10,20 @@ import 'dayjs/locale/en';
 
 import queryClient from './libs/queryClient';
 import validateMessages from './libs/validateMessages';
-import Navigation from './router/Navigation';
 import themeConfig from './styles/themeConfig';
 
-dayjs.locale('en');
+import App from '@/App';
+
+dayjs.locale('ru');
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <StrictMode>
         <QueryClientProvider client={queryClient}>
             <ConfigProvider theme={themeConfig} locale={enUS} form={{validateMessages}}>
-                <Navigation />
+                <App />
             </ConfigProvider>
 
-            <ReactQueryDevtools />
+            {import.meta.env.DEV && <ReactQueryDevtools />}
         </QueryClientProvider>
     </StrictMode>,
 );

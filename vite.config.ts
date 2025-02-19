@@ -11,7 +11,7 @@ export default ({mode}: ConfigEnv) => {
 
     const BUILD_DATE = Date.now();
     const VERSION = env.npm_package_version;
-    const APP_NAME = env.npm_package_name;
+    const APP_NAME = 'white-group.ru';
 
     return defineConfig({
         define: {
@@ -19,6 +19,7 @@ export default ({mode}: ConfigEnv) => {
             __BUILD_DATE__: `"${BUILD_DATE}"`,
             __SYSTEM__: `"${APP_NAME}"`,
             __UNIQUE_STATE__: env.DEV ? '"development"' : `"${VERSION}_${BUILD_DATE}"`,
+            __MODE__: `"${env.MODE}"` || '"development"',
         },
         assetsInclude: ['**/*.svg'],
         plugins: [react(), svgr()],
@@ -39,7 +40,8 @@ export default ({mode}: ConfigEnv) => {
         },
         base: '',
         build: {
-            outDir: './build',
+            outDir: `./build/${mode}`,
+            target: 'esnext',
             minify: true,
             reportCompressedSize: true,
             copyPublicDir: true,
