@@ -15,7 +15,14 @@ interface Props extends CarouselProps {
 
 const CarouselView = memo<Props>(({items, autoplay = true, autoplaySpeed = 3000}): JSX.Element | null => {
     return (
-        <Carousel autoplay={autoplay} autoplaySpeed={autoplaySpeed} dots={items.length > 1} pauseOnDotsHover>
+        <Carousel
+            autoplay={autoplay}
+            autoplaySpeed={autoplaySpeed}
+            dots={items.length > 1}
+            swipe
+            pauseOnDotsHover
+            lazyLoad="ondemand"
+        >
             {items.map(({title, image, alt, href, children}) => {
                 const Element = href ? 'a' : 'div';
 
