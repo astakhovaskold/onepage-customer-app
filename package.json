@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:all": "tsc && bite build --mode ferma_f",
     "preview": "vite preview",
     "lint": "ESLINT_USE_FLAT_CONFIG=false tsc -p ./tsconfig.json && eslint 'src/**/*.{ts,tsx}' --quiet --cache --fix",
     "format": "prettier --write \"src/**/*.ts\""
