@@ -13,6 +13,20 @@ export default ({mode}: ConfigEnv) => {
     const VERSION = env.npm_package_version;
     const APP_NAME = 'white-group.ru';
 
+    const MODE_MAPPING = {
+        ferma_f: 'ferma-finlyandskiy',
+        ferma_s: 'ferma-sinopskaya',
+        ferma_cafe: 'ferma-cafe',
+        ferma_k_metro_kom: 'ferma-komendantskiy',
+        ferma_k_metro_pul: 'ferma-pulkovo',
+        ferma_k_metro_td_passage: 'ferma-passazh',
+        ferma_k_metro_perekrestok: 'ferma-v-supermarkete-perekrestok',
+        chaika: 'chaika',
+        deda_f: 'deda-khinkali-finlyandskiy',
+        deda_l: 'deda-khinkali-liteyniy',
+        deda_k: 'deda-khinkali-karavannaya',
+    };
+
     return defineConfig({
         define: {
             __VERSION__: `"${VERSION}"`,
@@ -40,7 +54,7 @@ export default ({mode}: ConfigEnv) => {
         },
         base: '',
         build: {
-            outDir: `./build/${mode}`,
+            outDir: `./build/${MODE_MAPPING[mode]}`,
             target: 'esnext',
             minify: true,
             reportCompressedSize: true,

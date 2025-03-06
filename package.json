@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:all": "tsc && bite build --mode ferma_f",
+    "build:all": "tsc && vite build --mode ferma_f && vite build --mode ferma_s && vite build --mode ferma_cafe && vite build --mode ferma_k_metro_kom && vite build --mode ferma_k_metro_pul && vite build --mode ferma_k_metro_td_passage && vite build --mode ferma_k_metro_perekrestok && vite build --mode chaika && vite build --mode deda_f && vite build --mode deda_l && vite build --mode deda_k",
     "preview": "vite preview",
     "lint": "ESLINT_USE_FLAT_CONFIG=false tsc -p ./tsconfig.json && eslint 'src/**/*.{ts,tsx}' --quiet --cache --fix",
     "format": "prettier --write \"src/**/*.ts\""
