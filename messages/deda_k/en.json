@@ -1,71 +1,91 @@
 {
   "header": {
-    "title": "Deda Hinkali Restaurant on Karavannaya"
+    "title": "DeDa Khinkali Restaurant on Karavannaya"
   },
   "carousel": {
     "items": [
       {
-        "title": "Loyalty program",
-        "children": [
-          {
-            "title": "Register in our loyalty program",
-            "subtitle": "Click to download the app"
-          }
-        ]
+        "image": "images/deda/deda_k-1.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-2.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-3.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-4.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-5.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-6.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-7.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-8.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-9.jpg"
+      },
+      {
+        "image": "images/deda/deda_k-10.jpg"
       }
     ]
   },
   "place": {
-    "name": "Deda Hinkali",
+    "name": "DeDa Khinkali",
     "address": "Karavannaya st. 2"
   },
   "menu": {
-    "items": [
-      {
-        "title": "Bar menu",
-        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
-      },
-      {
-        "title": "Main menu",
-        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
-      }
-    ]
+    "items": []
+  },
+  "app": {
+    "href": ""
   },
   "social_contact": {
     "items": [
       {
         "icon": "telegram",
         "name": "Telegram",
-        "href": "https://t.me"
+        "href": "https://t.me/manager_fermarst"
       },
       {
         "icon": "whatsapp",
         "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
       }
     ]
   },
   "social_extended": {
     "items": [
       {
-        "icon": "telegram",
-        "name": "Telegram",
-        "href": "https://t.me"
-      },
-      {
-        "icon": "whatsapp",
-        "name": "WhatsApp",
-        "href": "https://wa.me"
-      },
-      {
         "icon": "yandex",
         "name": "Yandex",
-        "href": "https://maps.yandex.ru"
+        "href": "https://yandex.ru/maps/org/deda_khinkali/128810654818/reviews/?add-review=true"
       },
       {
         "icon": "google-maps",
         "name": "Google Maps",
-        "href": "https://maps.google.com"
+        "href": "https://g.page/r/CVbCDU1CMFRQEBM/review"
+      },
+      {
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/70000001088132447/addReview?utm_source=lk"
+      },
+      {
+        "icon": "restoclub",
+        "name": "Restoclub",
+        "href": "https://www.restoclub.ru/spb/place/deda-hinkali-2/opinions"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d27722567-DeDa_Khinkali_na_Karavannoi-St_Petersburg_Northwestern_District.html"
       }
     ]
   }

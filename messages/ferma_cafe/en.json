@@ -1,0 +1,60 @@
+{
+  "header": {
+    "title": "FermA Cafe"
+  },
+  "carousel": {
+    "items": [
+      {
+        "image": "images/ferma/ferma_cafe-1.jpg"
+      }
+    ]
+  },
+  "place": {
+    "name": "FermA Cafe",
+    "address": "Sadovaya st. 42"
+  },
+  "menu": {
+    "items": []
+  },
+  "app": {
+    "href": ""
+  },
+  "social_contact": {
+    "items": [
+      {
+        "icon": "telegram",
+        "name": "Telegram",
+        "href": "https://t.me/manager_fermarst"
+      },
+      {
+        "icon": "whatsapp",
+        "name": "WhatsApp",
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
+      }
+    ]
+  },
+  "social_extended": {
+    "items": [
+      {
+        "icon": "yandex",
+        "name": "Yandex",
+        "href": "https://yandex.ru/maps/org/ferma/7423519388/reviews/?add-review=true"
+      },
+      {
+        "icon": "google-maps",
+        "name": "Google Maps",
+        "href": "https://g.page/r/CTJiHiqoTbuUEBM/review"
+      },
+      {
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/5348553838509296/addReview?utm_source=lk"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d6117971-Ferma-St_Petersburg_Northwestern_District.html"
+      }
+    ]
+  }
+}

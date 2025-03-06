@@ -3,10 +3,10 @@
     "title": "Leave a review",
     "subtitle": "Please rate the establishment"
   },
-  "tips": {
-    "title": "Leave a tip",
-    "subtitle": "Did you enjoy the service?",
-    "button": "Leave a tip"
+  "app": {
+    "title": "Register in our loyalty program",
+    "subtitle": "Click to download the app",
+    "button": "Download"
   },
   "contact": {
     "title": "Write to the manager",

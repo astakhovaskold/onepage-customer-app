@@ -1,71 +1,88 @@
 {
   "header": {
-    "title": "Deda Hinkali Restaurant on Finlandskiy"
+    "title": "DeDa Khinkali Restaurant on Finlyandsky"
   },
   "carousel": {
     "items": [
       {
-        "title": "Loyalty program",
-        "children": [
-          {
-            "title": "Register in our loyalty program",
-            "subtitle": "Click to download the app"
-          }
-        ]
+        "image": "images/deda/deda_f-1.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-2.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-3.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-4.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-5.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-6.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-7.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-8.jpg"
+      },
+      {
+        "image": "images/deda/deda_f-9.jpg"
       }
     ]
   },
   "place": {
-    "name": "Deda Hinkali",
-    "address": "Finlandskiy Ave 1"
+    "name": "DeDa Khinkali",
+    "address": "Finlyandsky Ave. 1"
   },
   "menu": {
-    "items": [
-      {
-        "title": "Bar menu",
-        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
-      },
-      {
-        "title": "Main menu",
-        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
-      }
-    ]
+    "items": []
+  },
+  "app": {
+    "href": ""
   },
   "social_contact": {
     "items": [
       {
         "icon": "telegram",
         "name": "Telegram",
-        "href": "https://t.me"
+        "href": "https://t.me/manager_fermarst"
       },
       {
         "icon": "whatsapp",
         "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
       }
     ]
   },
   "social_extended": {
     "items": [
       {
-        "icon": "telegram",
-        "name": "Telegram",
-        "href": "https://t.me"
-      },
-      {
-        "icon": "whatsapp",
-        "name": "WhatsApp",
-        "href": "https://wa.me"
-      },
-      {
         "icon": "yandex",
         "name": "Yandex",
-        "href": "https://maps.yandex.ru"
+        "href": "https://yandex.ru/maps/org/deda_khinkali/236361868326/reviews/?add-review=true"
       },
       {
         "icon": "google-maps",
         "name": "Google Maps",
-        "href": "https://maps.google.com"
+        "href": "https://g.page/r/CVL3BlAt815gEBM/review"
+      },
+      {
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/70000001035881109/addReview?utm_source=lk"
+      },
+      {
+        "icon": "restoclub",
+        "name": "Restoclub",
+        "href": "https://www.restoclub.ru/spb/place/deda-hinkali/opinions"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d14475327-DeDa_Khinkali-St_Petersburg_Northwestern_District.html"
       }
     ]
   }

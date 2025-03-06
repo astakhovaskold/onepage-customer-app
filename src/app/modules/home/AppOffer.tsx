@@ -5,15 +5,15 @@ import Button from '@/app/ui/Button';
 import appConfig from '@/configuration/appConfig';
 import appTheme from '@/configuration/appTheme';
 
-const Tips = memo((): JSX.Element | null => {
-    const {title, subtitle, href, button} = appConfig.components.tips;
+const AppOffer = memo((): JSX.Element | null => {
+    const {title, subtitle, href, button} = appConfig.components.app;
 
     return (
         <MiniWidget title={title} subtitle={subtitle}>
             <Button
-                className="h-10 !bg-tips-button-background-gradient !text-tips-button-color !rounded-common !text-sm"
+                className="h-10 !bg-app-button-background-gradient !text-app-button-color !rounded-common !text-sm"
                 href={href}
-                size={appTheme.token.components.tips.button.size || 'middle'}
+                size={appTheme.token.components.app.button.size || 'middle'}
                 target="_blank"
                 rel="noreferrer nofollow"
             >
@@ -23,4 +23,4 @@ const Tips = memo((): JSX.Element | null => {
     );
 });
 
-export default Tips;
+export default AppOffer;

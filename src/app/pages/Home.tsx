@@ -2,15 +2,15 @@ import {memo} from 'react';
 
 import MobileContainer from '@/app/components/Layout/MobileContainer';
 import Title from '@/app/components/Utils/Title';
+import AppOffer from '@/app/modules/home/AppOffer';
 import ContactUs from '@/app/modules/home/ContactUs';
 import HomeCarousel from '@/app/modules/home/HomeCarousel';
 import HomeMenu from '@/app/modules/home/HomeMenu';
 import RateUs from '@/app/modules/home/RateUs';
-import Tips from '@/app/modules/home/Tips';
 
 import appConfig from '@/configuration/appConfig';
 
-const {header, rate, tips, contact} = appConfig.components;
+const {header, rate, app, contact} = appConfig.components;
 
 const Home = memo((): JSX.Element | null => {
     return (
@@ -25,7 +25,7 @@ const Home = memo((): JSX.Element | null => {
 
                     {rate && <RateUs />}
 
-                    {tips && <Tips />}
+                    {app && <AppOffer />}
 
                     {contact && <ContactUs />}
                 </div>

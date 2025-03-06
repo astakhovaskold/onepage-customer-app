@@ -1,71 +1,64 @@
 {
   "header": {
-    "title": "Ресторан ДеДа Хинкали на Финляндском"
+    "title": "Ресторан FermA на Финляндском"
   },
   "carousel": {
     "items": [
       {
-        "title": "Система лояльности",
-        "children": [
-          {
-            "title": "Регистрируйтесь в нашей системе лояльности",
-            "subtitle": "Нажмите, чтобы скачать приложение"
-          }
-        ]
+        "image": "images/ferma/ferma_f-1.jpg"
+      },
+      {
+        "image": "images/ferma/ferma_f-2.jpg"
+      },
+      {
+        "image": "images/ferma/ferma_f-3.jpg"
       }
     ]
   },
   "place": {
-    "name": "Деда Хинкали",
+    "name": "FermA",
     "address": "Финляндский пр. 1"
   },
   "menu": {
-    "items": [
-      {
-        "title": "Барное меню",
-        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
-      },
-      {
-        "title": "Основное меню",
-        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
-      }
-    ]
+    "items": []
+  },
+  "app": {
+    "href": ""
   },
   "social_contact": {
     "items": [
       {
         "icon": "telegram",
         "name": "Telegram",
-        "href": "https://t.me"
+        "href": "https://t.me/manager_fermarst"
       },
       {
         "icon": "whatsapp",
         "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
       }
     ]
   },
   "social_extended": {
     "items": [
       {
-        "icon": "telegram",
-        "name": "Telegram",
-        "href": "https://t.me"
-      },
-      {
-        "icon": "whatsapp",
-        "name": "WhatsApp",
-        "href": "https://wa.me"
-      },
-      {
         "icon": "yandex",
         "name": "Yandex",
-        "href": "https://maps.yandex.ru"
+        "href": "https://yandex.ru/maps/org/ferma/1097359456/reviews/?add-review=true"
       },
       {
         "icon": "google-maps",
         "name": "Google Maps",
-        "href": "https://maps.google.com"
+        "href": "https://g.page/r/CT5aaBs_2ygkEBM/review"
+      },{
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/5348552838484003/addReview?utm_source=lk"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d3595394-FermA-St_Petersburg_Northwestern_District.html"
       }
     ]
   }

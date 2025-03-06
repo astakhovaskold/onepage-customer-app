@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "FermA Confectionery at Metro Cash & Carry on Komendantsky"
+  },
+  "carousel": {
+    "items": [
+      {
+        "image": "images/ferma/ferma_k_metro-kom-1.jpg"
+      }
+    ]
+  },
+  "place": {
+    "name": "FermA Confectionery",
+    "address": "Komendantsky Ave. 3, lit. A"
+  },
+  "menu": {
+    "items": []
+  },
+  "app": {
+    "href": ""
+  },
+  "social_contact": {
+    "items": [
+      {
+        "icon": "telegram",
+        "name": "Telegram",
+        "href": "https://t.me/manager_fermarst"
+      },
+      {
+        "icon": "whatsapp",
+        "name": "WhatsApp",
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
+      }
+    ]
+  },
+  "social_extended": {
+    "items": [
+      {
+        "icon": "yandex",
+        "name": "Yandex",
+        "href": "https://yandex.ru/maps/org/ferma/195974057377/reviews/?add-review=true"
+      },
+      {
+        "icon": "google-maps",
+        "name": "Google Maps",
+        "href": "https://g.page/r/CdY0mQHMKj-jEBM/review"
+      },
+      {
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/70000001046379142/addReview?utm_source=lk"
+      }
+    ]
+  }
+}

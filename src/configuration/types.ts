@@ -12,9 +12,9 @@ export interface Configuration {
             items: Array<{href: string; icon: string}>;
         };
         header: {title?: ReactNode; logo: {image: string; title: string}};
-        carousel: {items: Array<{children: ReactNode; href: string; title: string}>};
+        carousel: {items: Array<{children: ReactNode; href: string; title: string; image: string}>};
         menu?: {items: Array<{href: string; title: string}>};
-        tips: {button: string; subtitle: string; href: string; title: string};
+        app: {button: string; subtitle: string; href?: string; title: string};
     };
     modal: {
         form: {
@@ -89,7 +89,7 @@ export interface Theme {
                     };
                 };
             };
-            tips: {
+            app: {
                 button: {
                     background: string;
                     size: 'small' | 'middle' | 'large';

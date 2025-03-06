@@ -30,7 +30,7 @@ const RateUs = memo((): JSX.Element | null => {
 
     return (
         <Context.Provider value={{rate}}>
-            <MiniWidget title={title} subtitle={subtitle}>
+            <MiniWidget title={title} subtitle={subtitle} containerClassName="!py-10">
                 <Rate className="text-3xl text-[#fc0]" onChange={onChange} />
             </MiniWidget>
 

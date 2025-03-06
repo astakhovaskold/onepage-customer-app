@@ -5,67 +5,73 @@
   "carousel": {
     "items": [
       {
-        "title": "Loyalty program",
-        "children": [
-          {
-            "title": "Register in our loyalty program",
-            "subtitle": "Click to download the app"
-          }
-        ]
+        "image": "images/chaika/chaika-1.jpg"
+      },
+      {
+        "image": "images/chaika/chaika-2.jpg"
+      },
+      {
+        "image": "images/chaika/chaika-3.jpg"
+      },
+      {
+        "image": "images/chaika/chaika-4.jpg"
+      },
+      {
+        "image": "images/chaika/chaika-5.jpg"
+      },
+      {
+        "image": "images/chaika/chaika-6.jpg"
+      },
+      {
+        "image": "images/chaika/chaika-7.jpg"
       }
     ]
   },
   "place": {
     "name": "Chaika",
-    "address": "Martynova emb., in front of bld. 40"
+    "address": "Martynova Embankment, opposite house 40"
   },
   "menu": {
-    "items": [
-      {
-        "title": "Bar menu",
-        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
-      },
-      {
-        "title": "Main menu",
-        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
-      }
-    ]
+    "items": []
+  },
+  "app": {
+    "href": ""
   },
   "social_contact": {
     "items": [
       {
         "icon": "telegram",
         "name": "Telegram",
-        "href": "https://t.me"
+        "href": "https://t.me/manager_fermarst"
       },
       {
         "icon": "whatsapp",
         "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
       }
     ]
   },
   "social_extended": {
     "items": [
       {
-        "icon": "telegram",
-        "name": "Telegram",
-        "href": "https://t.me"
-      },
-      {
-        "icon": "whatsapp",
-        "name": "WhatsApp",
-        "href": "https://wa.me"
-      },
-      {
         "icon": "yandex",
         "name": "Yandex",
-        "href": "https://maps.yandex.ru"
+        "href": "https://yandex.ru/maps/org/chayka/45825088261/reviews/?add-review=true"
       },
       {
         "icon": "google-maps",
         "name": "Google Maps",
-        "href": "https://maps.google.com"
+        "href": "https://g.page/r/CQWTZQdR64GGEBM/review"
+      },
+      {
+        "icon": "2gis",
+        "name": "Telegram",
+        "href": "https://2gis.ru/reviews/70000001018792599/addReview?utm_source=lk"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d8297884-Chaika-St_Petersburg_Northwestern_District.html"
       }
     ]
   }

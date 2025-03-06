@@ -68,8 +68,8 @@ const config: Config = {
                 'rate-button-background': token.components.modal.rate.button.background,
                 'rate-button-color': token.components.modal.rate.button.color,
 
-                'tips-button-background': token.components.tips.button.background,
-                'tips-button-color': token.components.tips.button.color,
+                'app-button-background': token.components.app.button.background,
+                'app-button-color': token.components.app.button.color,
 
                 processing: 'var(--color-processing)',
                 success: 'var(--color-success)',
@@ -78,7 +78,7 @@ const config: Config = {
                 closed: 'var(--color-closed)',
             },
             backgroundImage: {
-                'tips-button-background-gradient': token.components.tips.button.background,
+                'app-button-background-gradient': token.components.app.button.background,
             },
             fontSize: {
                 common: fontSize.common as unknown as string,

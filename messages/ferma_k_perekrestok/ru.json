@@ -1,0 +1,50 @@
+{
+  "header": {
+    "title": "Кондитерская FermA в супермаркете Перекресток"
+  },
+  "carousel": {
+    "items": [
+      {
+        "image": "images/ferma/ferma_k_perekrestok-1.jpg"
+      }
+    ]
+  },
+  "place": {
+    "name": "Кондитерская FermA",
+    "address": "д. Мистолово, ул. Главная зд. 5 к. 1, супермаркет Перекресток"
+  },
+  "menu": {
+    "items": []
+  },
+  "app": {
+    "href": ""
+  },
+  "social_contact": {
+    "items": [
+      {
+        "icon": "telegram",
+        "name": "Telegram",
+        "href": "https://t.me/manager_fermarst"
+      },
+      {
+        "icon": "whatsapp",
+        "name": "WhatsApp",
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
+      }
+    ]
+  },
+  "social_extended": {
+    "items": [
+      {
+        "icon": "yandex",
+        "name": "Yandex",
+        "href": "https://yandex.ru/maps/org/ferma/10984745072/reviews/?add-review=true"
+      },
+      {
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/70000001088244271/addReview?utm_source=lk"
+      }
+    ]
+  }
+}

@@ -99,7 +99,7 @@ const appTheme: Theme = {
                     },
                 },
             },
-            tips: {
+            app: {
                 button: {
                     background: 'radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F0EBE5 100%)',
                     color: appThemeBase.color.text,

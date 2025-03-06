@@ -5,13 +5,31 @@
   "carousel": {
     "items": [
       {
-        "title": "Система лояльности",
-        "children": [
-          {
-            "title": "Регистрируйтесь в нашей системе лояльности",
-            "subtitle": "Нажмите, чтобы скачать приложение"
-          }
-        ]
+        "image": "images/deda/deda_l-1.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-2.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-3.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-4.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-5.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-6.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-7.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-8.jpg"
+      },
+      {
+        "image": "images/deda/deda_l-9.jpg"
       }
     ]
   },
@@ -20,52 +38,51 @@
     "address": "Литейный пр. 64"
   },
   "menu": {
-    "items": [
-      {
-        "title": "Барное меню",
-        "href": "https://white-group.ru/upload/iblock/4ee/4ee8e2aa9f21f27ae0dd8d83317576e2.pdf"
-      },
-      {
-        "title": "Основное меню",
-        "href": "https://white-group.ru/upload/iblock/2f1/2f1dd267dd32258ef29b702851fafc55.pdf"
-      }
-    ]
+    "items": []
+  },
+  "app": {
+    "href": ""
   },
   "social_contact": {
     "items": [
       {
         "icon": "telegram",
         "name": "Telegram",
-        "href": "https://t.me"
+        "href": "https://t.me/manager_fermarst"
       },
       {
         "icon": "whatsapp",
         "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
       }
     ]
   },
   "social_extended": {
     "items": [
       {
-        "icon": "telegram",
-        "name": "Telegram",
-        "href": "https://t.me"
-      },
-      {
-        "icon": "whatsapp",
-        "name": "WhatsApp",
-        "href": "https://wa.me"
-      },
-      {
         "icon": "yandex",
         "name": "Yandex",
-        "href": "https://maps.yandex.ru"
+        "href": "https://yandex.ru/maps/org/deda_khinkali/213380201464/reviews/?add-review=true"
       },
       {
         "icon": "google-maps",
         "name": "Google Maps",
-        "href": "https://maps.google.com"
+        "href": "https://g.page/r/CbNP5KQ6pu48EBM/review"
+      },
+      {
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/70000001037775699/addReview?utm_source=lk"
+      },
+      {
+        "icon": "restoclub",
+        "name": "Restoclub",
+        "href": "https://www.restoclub.ru/spb/place/deda-hinkali-1/opinions"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d17698360-Deda_Khinkali_Liteyny-St_Petersburg_Northwestern_District.html"
       }
     ]
   }

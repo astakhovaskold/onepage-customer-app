@@ -15,7 +15,9 @@ const ContactButton = memo<ContactIconProps>(({type, href}) => {
             href={href}
             target="_blank"
             rel="noreferrer nofollow"
-            className={clsx('p-2 w-10 aspect-square flex items-center justify-center rounded-full')}
+            className={clsx(
+                'p-2 w-10 aspect-square flex items-center justify-center rounded-full hover:!text-[inherit]',
+            )}
         >
             <SocialMediaIcon type={type} />
         </a>

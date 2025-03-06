@@ -1,8 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
-import {getMobileAppLink} from '@/app/modules/home/utils';
-import {SLIDE_1} from '@/configuration/slides';
+import {getAppLink} from '@/app/modules/home/utils';
 import {Configuration} from '@/configuration/types';
 import i18n from '@/libs/i18n';
 import {APP_NAME} from '@/libs/text';
@@ -22,27 +21,18 @@ const appConfig: Configuration = {
             },
         },
         carousel: {
-            items: [
-                {
-                    title: i18n.t('carousel.items.0.title'),
-                    href: getMobileAppLink(),
-                    children: SLIDE_1,
-                },
-            ],
-        },
-        menu: {
-            items: i18n.t('menu.items', {ns: 'place'}),
+            items: i18n.t('carousel.items', {ns: 'place'}),
         },
         rate: {
             title: i18n.t('rate.title', {ns: 'common'}),
             subtitle: i18n.t('rate.subtitle', {ns: 'common'}),
             wantedRate: 4, // min rate
         },
-        tips: {
-            title: i18n.t('tips.title', {ns: 'common'}),
-            subtitle: i18n.t('tips.subtitle', {ns: 'common'}),
-            href: 'https://netmonet.co/tip/group/525781/users/1?o=0',
-            button: i18n.t('tips.button', {ns: 'common'}),
+        app: {
+            title: i18n.t('app.title', {ns: 'common'}),
+            subtitle: i18n.t('app.subtitle', {ns: 'common'}),
+            href: getAppLink(),
+            button: i18n.t('app.button', {ns: 'common'}),
         },
         contact: {
             title: i18n.t('contact.title', {ns: 'common'}),

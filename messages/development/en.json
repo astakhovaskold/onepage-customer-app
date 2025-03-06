@@ -1,23 +1,18 @@
 {
   "header": {
-    "title": "Deda Hinkali Restaurant on Finlandskiy"
+    "title": "Ferma Restaurant on Finlyandskiy"
   },
   "carousel": {
     "items": [
       {
-        "title": "Loyalty program",
-        "children": [
-          {
-            "title": "Register in our loyalty program",
-            "subtitle": "Click to download the app"
-          }
-        ]
+        "title": "Birthday Discount 20%",
+        "image": "images/ferma/image-1.jpg"
       }
     ]
   },
   "place": {
-    "name": "Deda Hinkali",
-    "address": "Finlandskiy Ave 1"
+    "name": "FermA",
+    "address": "Finlyandskiy Ave 1"
   },
   "menu": {
     "items": [
@@ -31,31 +26,29 @@
       }
     ]
   },
+  "app": {
+    "href": ""
+  },
   "social_contact": {
     "items": [
       {
         "icon": "telegram",
         "name": "Telegram",
-        "href": "https://t.me"
+        "href": "https://t.me/manager_fermarst"
       },
       {
         "icon": "whatsapp",
         "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://api.whatsapp.com/send?phone=79218912102"
       }
     ]
   },
   "social_extended": {
     "items": [
       {
-        "icon": "telegram",
+        "icon": "2gis",
         "name": "Telegram",
-        "href": "https://t.me"
-      },
-      {
-        "icon": "whatsapp",
-        "name": "WhatsApp",
-        "href": "https://wa.me"
+        "href": "https://2gis.com"
       },
       {
         "icon": "yandex",
@@ -66,6 +59,11 @@
         "icon": "google-maps",
         "name": "Google Maps",
         "href": "https://maps.google.com"
+      },
+      {
+        "icon": "tripadvisor",
+        "name": "TripAdvisor",
+        "href": "https://tripadvisor.com"
       }
     ]
   }

@@ -7,17 +7,19 @@ interface MiniWidgetProps {
     title: string;
     subtitle: string;
     className?: string;
+    containerClassName?: string;
 }
 
 const MiniWidget = memo<PropsWithChildren<MiniWidgetProps>>(
-    ({title, subtitle, children, className}): JSX.Element | null => {
+    ({title, subtitle, children, className, containerClassName}): JSX.Element | null => {
         return (
             <section
                 className={clsx(
-                    'py-3 px-4 flex flex-col transition-all duration-200 gap-component-layout justify-center bg-component-background hover:bg-component-background-hover rounded-common',
+                    'py-6 px-4 flex flex-col transition-all duration-200 gap-component-layout justify-center bg-component-background hover:bg-component-background-hover rounded-common',
                     {
                         'shadow-component': appTheme.shape.boxShadow,
                     },
+                    containerClassName,
                 )}
             >
                 <div className="flex flex-col gap-y-0.5 justify-center text-center">
