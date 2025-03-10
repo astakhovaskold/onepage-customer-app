@@ -3,8 +3,10 @@ import clsx from 'clsx';
 import {memo, useMemo} from 'react';
 
 import {SocialMediaType} from '@/app/components/SocialMediaIcon/types';
+
 import GisIcon from '@/assets/icons/social/2gis.svg?react';
 import GoogleMapsIcon from '@/assets/icons/social/google-maps.svg?react';
+import RestoclubIcon from '@/assets/icons/social/restoclub.svg?react';
 import TelegramIcon from '@/assets/icons/social/telegram.svg?react';
 import TripadvisorIcon from '@/assets/icons/social/tripadvisor.svg?react';
 import WhatsappIcon from '@/assets/icons/social/whatsapp.svg?react';
@@ -30,6 +32,8 @@ const SocialMediaIcon = memo<SocialMediaIconProps>(({type, size}): JSX.Element |
                 return GoogleMapsIcon;
             case 'yandex':
                 return YandexIcon;
+            case 'restoclub':
+                return RestoclubIcon;
         }
     }, [type]);
 

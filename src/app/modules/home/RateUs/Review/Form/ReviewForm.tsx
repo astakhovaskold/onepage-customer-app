@@ -1,9 +1,14 @@
 import {Form, Input, Rate} from 'antd';
+import clsx from 'clsx';
 import {memo, useCallback, useContext, useMemo} from 'react';
 
 import Context from '@/app/modules/home/RateUs/Review/Context';
 import {FORM_ID} from '@/app/modules/home/RateUs/Review/Form/settings';
 import appConfig from '@/configuration/appConfig';
+
+interface Props {
+    hasPhoto?: boolean;
+}
 
 interface FormValues {
     rate: number;
@@ -13,7 +18,7 @@ interface FormValues {
 const {Item} = Form;
 const {TextArea} = Input;
 
-const ReviewForm = memo((): JSX.Element | null => {
+const ReviewForm = memo<Props>(({hasPhoto = false}): JSX.Element | null => {
     const {aspects, place, textarea} = appConfig.modal.form;
     const {name, address, image} = place;
 
@@ -36,9 +41,15 @@ const ReviewForm = memo((): JSX.Element | null => {
             onFinish={onFinish}
         >
             <div className="relative rounded-common flex flex-col items-center">
-                <img className="rounded-common w-full h-[208px]" src={image} alt={`${name} - ${address}`} />
+                {hasPhoto && (
+                    <img className="rounded-common w-full h-[208px]" src={image} alt={`${name} - ${address}`} />
+                )}
 
-                <div className="absolute z-10 bottom-0 flex flex-col gap-y-4 w-full p-4 bg-white rounded-common">
+                <div
+                    className={clsx('flex flex-col gap-y-4 w-full p-4 bg-white rounded-common', {
+                        'absolute z-10 bottom-0': hasPhoto,
+                    })}
+                >
                     <div className="flex flex-col">
                         <span className="text-black text-base">{name}</span>
                         <span className="text-[#878787] text-sm">{address}</span>

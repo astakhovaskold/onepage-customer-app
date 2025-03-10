@@ -16,7 +16,7 @@ const Logo = memo<LogoProps>(({collapsed = false, className}): JSX.Element | nul
         <a
             href={appConfig.settings.baseURL}
             className={clsx(
-                'text-2xl text-black hover:text-black hover:opacity-80 font-bold',
+                'text-2xl text-black hover:text-black hover:opacity-80 font-bold basis-[48px]',
                 {
                     'text-center': collapsed,
                 },

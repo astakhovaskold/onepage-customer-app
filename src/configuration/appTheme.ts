@@ -101,7 +101,7 @@ const appTheme: Theme = {
             },
             app: {
                 button: {
-                    background: 'radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F0EBE5 100%)',
+                    background: appThemeBase.color.primary,
                     color: appThemeBase.color.text,
                     size: 'large',
                 },

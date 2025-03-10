@@ -1,1 +1,1 @@
-export type SocialMediaType = 'telegram' | 'whatsapp' | 'yandex' | 'tripadvisor' | 'google-maps' | '2gis';
+export type SocialMediaType = 'telegram' | 'whatsapp' | 'yandex' | 'tripadvisor' | 'google-maps' | '2gis' | 'restoclub';
