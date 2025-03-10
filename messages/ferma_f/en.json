@@ -46,24 +46,23 @@
   "social_extended": {
     "items": [
       {
-        "icon": "2gis",
-        "name": "Telegram",
-        "href": "https://2gis.com"
-      },
-      {
         "icon": "yandex",
         "name": "Yandex",
-        "href": "https://maps.yandex.ru"
+        "href": "https://yandex.ru/maps/org/ferma/1097359456/reviews/?add-review=true"
       },
       {
         "icon": "google-maps",
         "name": "Google Maps",
-        "href": "https://maps.google.com"
+        "href": "https://g.page/r/CT5aaBs_2ygkEBM/review"
+      },{
+        "icon": "2gis",
+        "name": "2Gis",
+        "href": "https://2gis.ru/reviews/5348552838484003/addReview?utm_source=lk"
       },
       {
         "icon": "tripadvisor",
         "name": "TripAdvisor",
-        "href": "https://tripadvisor.com"
+        "href": "https://www.tripadvisor.ru/UserReviewEdit-g298507-d3595394-FermA-St_Petersburg_Northwestern_District.html"
       }
     ]
   }
