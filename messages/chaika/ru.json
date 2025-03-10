@@ -5,25 +5,7 @@
   "carousel": {
     "items": [
       {
-        "image": "images/chaika/chaika-1.jpg"
-      },
-      {
-        "image": "images/chaika/chaika-2.jpg"
-      },
-      {
-        "image": "images/chaika/chaika-3.jpg"
-      },
-      {
-        "image": "images/chaika/chaika-4.jpg"
-      },
-      {
-        "image": "images/chaika/chaika-5.jpg"
-      },
-      {
-        "image": "images/chaika/chaika-6.jpg"
-      },
-      {
-        "image": "images/chaika/chaika-7.jpg"
+        "image": "images/chaika/chaika-0.jpg"
       }
     ]
   },
